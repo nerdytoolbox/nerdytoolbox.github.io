@@ -1,12 +1,12 @@
 import React from 'react'
-import { Button } from 'nerdy-lib'
-import { Hub } from 'nerdy-lib'
+import { Button } from "nerdy-lib";
 
 const App = () => {
   return (
-    <Hub title="Nerdy Hub">
-      <Button>TEST</Button>
-    </Hub>
+    <div className="main-app">
+      <span>This page is a work in progress.</span>
+      <Button onClick={() => window.location.href="/arcs-lars"}>Go to Arcs - Lars Bots</Button>
+    </div>
   )
 }
 

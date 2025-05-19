@@ -2,11 +2,11 @@
   "name": "nerdytoolbox.github.io",
   "homepage": "https://nerdytoolbox.github.io",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "installAll": "npm install && npm install github:nerdytoolbox/nerdy-lib",
+    "cleanInstall": "rm -rf node_modules && rm -rf dist && rm -rf package-lock.json && npm install",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -14,7 +14,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "nerdy-lib": "github:nerdytoolbox/nerdy-lib",
+    "nerdy-lib": "github:nerdytoolbox/nerdy-lib#v1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
