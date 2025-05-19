@@ -5,14 +5,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "installAll": "npm install && npm install github:nerdytoolbox/nerdy-lib",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "nerdy-lib": "github:nerdytoolbox/nerdy-lib",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
