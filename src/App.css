@@ -2,3 +2,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.footer {
+    width: 100%;
+    font-size: 0.6rem;
+    color: var(--gray);
+    text-align: center;
+
+    a, a:hover, a:active {
+        color: var(--gray);
+        text-decoration: none;
+    }
+}

@@ -6,8 +6,16 @@ import AppCard from "./components/AppCard.jsx";
 import { BOARDGAME, VIDEOGAME } from "./util/constants.js";
 
 const App = () => {
+  const getFooter = () => {
+    return (
+      <div className="footer">
+        <a href="https://github.com/nerdytoolbox/nerdytoolbox.github.io/issues/new?template=ISSUE_TEMPLATE.md">Report issues / Request a new feature or app</a>
+      </div>
+    )
+  }
+
   return (
-    <Hub title="Nerdy Toolbox">
+    <Hub title="Nerdy Toolbox" footer={getFooter()}>
       <div className="align-horizontal wrap">
         <AppCard title="Boardgames - What to play next?" thumbnail={bggThumbnail} link="/bg-play-next" type={BOARDGAME} />
         <AppCard title="Arcs - Lars bots" thumbnail={arcsThumbnail} link="/arcs-lars" type={BOARDGAME} />
