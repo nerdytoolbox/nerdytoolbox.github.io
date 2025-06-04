@@ -1,0 +1,63 @@
+.app-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 14.5rem;
+  width: 11rem;
+
+  .card {
+	position: relative;
+	height: 10rem;
+	width: 10rem;
+	aspect-ratio: 1/1;
+
+	background-color: var(--eerie-black1);
+	border: 3px solid var(--eerie-black1);
+	border-radius: 0.5rem;
+
+	cursor: pointer;
+
+	@media (prefers-color-scheme: dark) {
+	  border: 3px solid white;
+	  background-color: white;
+	}
+
+	.thumbnail {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: contain;
+	  border-radius: 5px;
+	}
+
+	.icon {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: absolute;
+	  top: 0.3rem;
+	  right: 0.3rem;
+	  width: 25px;
+	  height: 25px;
+	  color: white;
+	  background-color: var(--eerie-black1);
+	  border-radius: 25px;
+
+	  @media (prefers-color-scheme: dark) {
+		color: var(--eerie-black1);
+		background-color: white;
+	  }
+	}
+  }
+
+  .card:hover {
+	border: 3px solid var(--plum);
+  }
+
+  .title {
+	height: 4rem;
+	margin-top: 0.5rem;
+	font-weight: bold;
+  }
+}
+

@@ -1,11 +1,4 @@
-.main-app {
+.wrap {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-
-    button {
-        width: 20rem;
-        margin: 1rem;
-    }
+    flex-wrap: wrap;
 }
