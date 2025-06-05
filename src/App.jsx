@@ -14,7 +14,7 @@ const App = () => {
   }
 
   return (
-    <Hub title="Nerdy Toolbox" footer={getFooter()} icon="NerdyToolboxThumbnail.png">
+    <Hub footer={getFooter()}>
       <div className="align-horizontal wrap">
         <AppCard title="Boardgames - What to play next?" thumbnail="bggThumbnail.png" link="/bg-play-next" type={BOARDGAME} />
         <AppCard title="Arcs - Lars bots" thumbnail="arcsThumbnail.png" link="/arcs-lars" type={BOARDGAME} />
