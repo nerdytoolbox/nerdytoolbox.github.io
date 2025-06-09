@@ -1,15 +1,22 @@
+@use 'nerdy-lib/src/mixins' as mixins;
+
 .app-card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 14.5rem;
-  width: 11rem;
+  height: 11rem;
+  width: 8rem;
+
+  @include mixins.desktop {
+	height: 14rem;
+	width: 11rem;
+  }
 
   .card {
 	position: relative;
-	height: 10rem;
-	width: 10rem;
+	height: 7rem;
+	width: 7rem;
 	aspect-ratio: 1/1;
 
 	background-color: var(--eerie-black1);
@@ -21,6 +28,11 @@
 	@media (prefers-color-scheme: dark) {
 	  border: 3px solid white;
 	  background-color: white;
+	}
+
+	@include mixins.desktop {
+	  height: 10rem;
+	  width: 10rem;
 	}
 
 	.thumbnail {
@@ -55,9 +67,15 @@
   }
 
   .title {
-	height: 4rem;
+	height: 3rem;
 	margin-top: 0.5rem;
+	font-size: 0.8rem;
 	font-weight: bold;
+
+	@include mixins.desktop {
+	  font-size: 1rem;
+	  height: 4.5rem;
+	}
   }
 }
 

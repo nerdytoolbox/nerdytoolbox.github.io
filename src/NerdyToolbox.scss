@@ -1,6 +1,12 @@
-.wrap {
+@use 'nerdy-lib/src/mixins' as mixins;
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
+
+    @include mixins.mobile {
+        justify-content: center;
+    }
 }
 
 .footer {

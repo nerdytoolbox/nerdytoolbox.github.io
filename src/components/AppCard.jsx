@@ -3,7 +3,6 @@ import { FaDice } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
 import { BOARDGAME, VIDEOGAME } from "../util/constants.js";
 
-
 const AppCard = ({
 	title,
   thumbnail,
