@@ -2,7 +2,7 @@ import React from 'react'
 import './NerdyToolbox.scss'
 import { Hub } from 'nerdy-lib'
 import AppCard from "./components/AppCard.jsx";
-import { BOARDGAME, VIDEOGAME } from "./util/constants.js";
+import { BOARDGAME, OTHER, VIDEOGAME } from "./util/constants.js";
 
 const NerdyToolbox = () => {
   const getFooter = () => {
@@ -17,6 +17,7 @@ const NerdyToolbox = () => {
         <AppCard title="Boardgames - What to play next?" thumbnail="bggThumbnail.png" link="/bg-play-next" type={BOARDGAME} />
         <AppCard title="Arcs - Lars bots" thumbnail="arcsThumbnail.png" link="/arcs-lars" type={BOARDGAME} />
         <AppCard title="Witch of Fern Island Resource Map" thumbnail="witchOfFernIslandThumbnail.png" link="/witch-of-fern-island-map" type={VIDEOGAME} />
+        <AppCard title="Nibble" thumbnail="nibbleThumbnail.png" link="/nibble" type={OTHER} />
       </div>
     </Hub>
   )
