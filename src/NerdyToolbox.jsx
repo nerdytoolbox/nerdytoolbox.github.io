@@ -1,10 +1,12 @@
 import React from 'react'
 import './NerdyToolbox.scss'
-import { Hub } from 'nerdy-lib'
+import { Hub, CookieModal, useAnalyticsConsent } from 'nerdy-lib'
 import AppCard from "./components/AppCard/AppCard.jsx";
 import { BOARDGAME, OTHER, VIDEOGAME } from "./util/constants.js";
 
 const NerdyToolbox = () => {
+	useAnalyticsConsent()
+
   const getFooter = () => {
     return (
       <a href="https://github.com/nerdytoolbox/nerdytoolbox.github.io/issues/new?template=ISSUE_TEMPLATE.md">Report issues / Request a new feature or app</a>
@@ -19,6 +21,7 @@ const NerdyToolbox = () => {
         <AppCard title="Witch of Fern Island Resource Map" thumbnail="witchOfFernIslandThumbnail.png" link="/witch-of-fern-island-map" type={VIDEOGAME} />
         <AppCard title="Nibble" thumbnail="nibbleThumbnail.png" link="/nibble" type={OTHER} />
       </div>
+			<CookieModal />
     </Hub>
   )
 }
