@@ -1,7 +1,7 @@
 import React from 'react'
 import './NerdyToolbox.scss'
 import { Hub } from 'nerdy-lib'
-import AppCard from "./components/AppCard.jsx";
+import AppCard from "./components/AppCard/AppCard.jsx";
 import { BOARDGAME, OTHER, VIDEOGAME } from "./util/constants.js";
 
 const NerdyToolbox = () => {
